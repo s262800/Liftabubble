@@ -47,6 +47,11 @@ public class BubbleCollision : MonoBehaviour
                 gameObject.GetComponent<Rigidbody2D>().simulated = false;
 
             }
+
+            if(collision.gameObject.GetComponent<SpriteRenderer>())
+            {
+                collision.gameObject.GetComponent<SpriteRenderer>().enabled = true;
+            }
         }
 
         if (collision.gameObject.CompareTag("Replenish"))
