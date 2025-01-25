@@ -26,6 +26,9 @@ public class PushUp : MonoBehaviour
     [SerializeField]
     private float force = 0.25f;
 
+    [SerializeField]
+    private Animator anim;
+
 
     private Vector2 upVector;
 
@@ -42,6 +45,9 @@ public class PushUp : MonoBehaviour
 
     private float distanceX;
     private float distanceY;
+
+
+
 
 
 
@@ -62,9 +68,16 @@ public class PushUp : MonoBehaviour
         if(Input.GetKey(KeyCode.Space) || Input.GetKey(KeyCode.Mouse0))
         {
             CreateRay();
+            anim.SetBool("Fanning", true);
+        }
+       
+        if (Input.GetKeyUp(KeyCode.Space) || Input.GetKeyUp(KeyCode.Mouse0))
+        {
+            anim.SetBool("Fanning", false);
         }
 
-         distanceX = Mathf.Abs(fan.transform.position.x - bubble.transform.position.x);
+
+        distanceX = Mathf.Abs(fan.transform.position.x - bubble.transform.position.x);
          distanceY = Mathf.Abs(fan.transform.position.y - bubble.transform.position.y);
 
 
@@ -129,7 +142,6 @@ public class PushUp : MonoBehaviour
             if (bubble.GetComponent<Rigidbody2D>() != null)
             {
                 bubble.GetComponent<Rigidbody2D>().velocity += (forceV * force);
-                Debug.Log(forceV * force);
 
             }
         }
