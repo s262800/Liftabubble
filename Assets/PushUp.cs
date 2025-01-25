@@ -11,7 +11,8 @@ public class PushUp : MonoBehaviour
     [SerializeField]
     private LayerMask layerMask;
 
-    private float force = 0.1f;
+    [SerializeField]
+    private float force = 0.25f;
 
 
     private Vector2 upVector;
@@ -41,72 +42,58 @@ public class PushUp : MonoBehaviour
 
         if (Input.GetKey(KeyCode.W))
         {
-            Debug.DrawRay(startPoint.position, startPoint.TransformDirection(Vector2.up) * 10f, Color.red);
-            
-            RaycastHit2D hit = Physics2D.Raycast(startPoint.position, startPoint.TransformDirection(Vector2.up), 10f, layerMask);
+           // Debug.DrawRay(startPoint.position, startPoint.TransformDirection(Vector2.up) * 1, Color.red);
 
-            if(hit)
-            {
-               if(GetComponent<Rigidbody2D>() != null)
-                {
-                    GetComponent<Rigidbody2D>().AddForce(upVector * force);
-                    
-                }
-            }
+
+            CreateRay(Vector2.up, upVector);
 
         }
 
         if (Input.GetKey(KeyCode.D))
         {
-            Debug.DrawRay(startPoint.position, startPoint.TransformDirection(Vector2.right) * 10f, Color.red);
+          //  Debug.DrawRay(startPoint.position, startPoint.TransformDirection(Vector2.right) * 1, Color.red);
 
-            RaycastHit2D hit = Physics2D.Raycast(startPoint.position, startPoint.TransformDirection(Vector2.right), 10f, layerMask);
-
-            if (hit)
-            {
-                if (GetComponent<Rigidbody2D>() != null)
-                {
-                    GetComponent<Rigidbody2D>().AddForce(rightVector * force);
-
-                }
-            }
+            CreateRay(Vector2.right, rightVector);
 
         }
 
 
         if (Input.GetKey(KeyCode.A))
         {
-            Debug.DrawRay(startPoint.position, startPoint.TransformDirection(Vector2.left) * 10f, Color.red);
+          //  Debug.DrawRay(startPoint.position, startPoint.TransformDirection(Vector2.left) * 1, Color.red);
 
-            RaycastHit2D hit = Physics2D.Raycast(startPoint.position, startPoint.TransformDirection(Vector2.left), 10f, layerMask);
+            CreateRay(Vector2.left, leftVector);
 
-            if (hit)
-            {
-                if (GetComponent<Rigidbody2D>() != null)
-                {
-                    GetComponent<Rigidbody2D>().AddForce(leftVector * force);
-
-                }
-            }
         }
 
         if (Input.GetKey(KeyCode.S))
         {
-            Debug.DrawRay(startPoint.position, startPoint.TransformDirection(Vector2.down) * 10f, Color.red);
+        //    Debug.DrawRay(startPoint.position, startPoint.TransformDirection(Vector2.down) * 1, Color.red);
 
-            RaycastHit2D hit = Physics2D.Raycast(startPoint.position, startPoint.TransformDirection(Vector2.down), 10f, layerMask);
-
-            if (hit)
-            {
-                if (GetComponent<Rigidbody2D>() != null)
-                {
-                    GetComponent<Rigidbody2D>().AddForce(downVector * force );
-                } 
-            }
+          CreateRay (Vector2.down, downVector);
         }
 
 
 
+
+    }
+
+    void CreateRay(Vector2 dir, Vector2 forceV)
+    {
+
+        Debug.DrawRay(startPoint.position, startPoint.TransformDirection(dir) * 10f, Color.green);
+
+        RaycastHit2D hit = Physics2D.Raycast(startPoint.position, startPoint.TransformDirection(dir), 20f, layerMask);
+
+        if (hit)
+        {
+            if (GetComponent<Rigidbody2D>() != null)
+            {
+                GetComponent<Rigidbody2D>().velocity += (forceV * force);
+                Debug.Log(forceV * force);
+
+            }
+        }
 
     }
 }
