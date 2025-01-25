@@ -11,6 +11,12 @@ public class BubbleCollision : MonoBehaviour
     [SerializeField]
     private GameObject gameOverPopup;
 
+    [SerializeField]
+    private CanvasGroup gameOverPopupCG;
+
+    [SerializeField]
+    private Score score_cs;
+
 
     void Start()
     {
@@ -40,29 +46,22 @@ public class BubbleCollision : MonoBehaviour
             obj.GetComponent<SpriteRenderer>().enabled = true;
         }
 
-        gameOverPopup.SetActive(true);
+        gameOverPopupCG.alpha = 1.0f;
+        gameOverPopupCG.interactable = true;
+        gameOverPopupCG.blocksRaycasts = true;
+        
 
 
     }
 
     void End(GameObject obj)
     {
-        if (gameObject.GetComponent<SpriteRenderer>() != false) gameObject.GetComponent<SpriteRenderer>().enabled = false;
-
-        foreach (Transform child in gameObject.transform) child.gameObject.GetComponent<SpriteRenderer>().enabled = false;
-
-        if (gameObject.GetComponent<Rigidbody2D>())
-        {
-            gameObject.GetComponent<Rigidbody2D>().simulated = false;
-
-        }
-
-        if (obj.GetComponent<SpriteRenderer>())
-        {
-            obj.GetComponent<SpriteRenderer>().enabled = true;
-        }
-
-        gameOverPopup.SetActive(true);
+        score_cs.SetBubbleSize(bubbleChangeSize_cs.GetSize());
+        score_cs.SetScoreText(); 
+        gameOverPopupCG.alpha = 1.0f;
+        gameOverPopupCG.interactable = true;
+        gameOverPopupCG.blocksRaycasts = true;
+        gameObject.SetActive(false);
     }
 
 

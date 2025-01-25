@@ -50,6 +50,11 @@ public class BubbleChangeSize : MonoBehaviour
         
     }
 
+    public float GetSize()
+    {
+         return transform.localScale.x + transform.localScale.y;
+    }
+
     private void Growth()
     {
         if (shouldShrink) return;
