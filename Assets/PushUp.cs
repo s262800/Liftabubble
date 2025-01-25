@@ -2,11 +2,23 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+
+
+public enum Facing
+{
+    ABOVE,
+    BELOW,
+    LEFT,
+    RIGHT
+}
+
 public class PushUp : MonoBehaviour
 {
+    [SerializeField]
+    private GameObject bubble;
 
     [SerializeField]
-    private Transform startPoint;
+    private GameObject fan;
 
     [SerializeField]
     private LayerMask layerMask;
@@ -17,13 +29,19 @@ public class PushUp : MonoBehaviour
 
     private Vector2 upVector;
 
-
     private Vector2 rightVector;
 
     private Vector2 leftVector;
 
-
     private Vector2 downVector;
+
+    private Facing facing;
+
+    private Vector2 direction;
+    private Vector2 forceV;
+
+    private float distanceX;
+    private float distanceY;
 
 
 
@@ -33,63 +51,84 @@ public class PushUp : MonoBehaviour
         downVector = new Vector2(0, -1);
         rightVector = new Vector2(1, 0);
         leftVector = new Vector2(-1, 0);
+
+        facing = Facing.BELOW;
     }
 
 
     void Update()
     {
 
-
-        if (Input.GetKey(KeyCode.W))
+        if(Input.GetKey(KeyCode.Space) || Input.GetKey(KeyCode.Mouse0))
         {
-           // Debug.DrawRay(startPoint.position, startPoint.TransformDirection(Vector2.up) * 1, Color.red);
+            CreateRay();
+        }
+
+         distanceX = Mathf.Abs(fan.transform.position.x - bubble.transform.position.x);
+         distanceY = Mathf.Abs(fan.transform.position.y - bubble.transform.position.y);
 
 
-            CreateRay(Vector2.up, upVector);
+
+        if ((fan.transform.position.y > bubble.transform.position.y) && (distanceY > 1f))
+        {
+            facing = Facing.ABOVE;
+        }
+
+        if ((fan.transform.position.y < bubble.transform.position.y) && (distanceY > 1f))
+        {
+
+            facing = Facing.BELOW;
 
         }
 
-        if (Input.GetKey(KeyCode.D))
+        if ((fan.transform.position.x > bubble.transform.position.x) && (distanceX >= 3f))
         {
-          //  Debug.DrawRay(startPoint.position, startPoint.TransformDirection(Vector2.right) * 1, Color.red);
-
-            CreateRay(Vector2.right, rightVector);
-
+            facing = Facing.RIGHT;
         }
 
-
-        if (Input.GetKey(KeyCode.A))
+        if ((fan.transform.position.x < bubble.transform.position.x) && (distanceX >= 3f) )
         {
-          //  Debug.DrawRay(startPoint.position, startPoint.TransformDirection(Vector2.left) * 1, Color.red);
-
-            CreateRay(Vector2.left, leftVector);
-
+            facing = Facing.LEFT;
         }
 
-        if (Input.GetKey(KeyCode.S))
+        switch (facing)
         {
-        //    Debug.DrawRay(startPoint.position, startPoint.TransformDirection(Vector2.down) * 1, Color.red);
-
-          CreateRay (Vector2.down, downVector);
+            case Facing.ABOVE:
+                direction = Vector2.down; 
+                forceV = downVector;
+                fan.transform.eulerAngles = new Vector3(0, 0, 180);
+                break;
+            case Facing.BELOW:
+                direction = Vector2.up;
+                forceV = upVector;
+                fan.transform.eulerAngles = new Vector3(0, 0, 0);
+                break;
+            case Facing.LEFT:
+                direction = Vector2.right;
+                forceV = rightVector;
+                fan.transform.eulerAngles = new Vector3(0, 0, 270);
+                break;
+            case Facing.RIGHT:
+                direction = Vector2.left;
+                forceV = leftVector;
+                fan.transform.eulerAngles = new Vector3(0, 0, 90);
+                break;
         }
-
-
-
 
     }
 
-    void CreateRay(Vector2 dir, Vector2 forceV)
+    void CreateRay()
     {
 
-        Debug.DrawRay(startPoint.position, startPoint.TransformDirection(dir) * 10f, Color.green);
+        Debug.DrawRay(fan.transform.position, fan.transform.TransformDirection(Vector2.up) * 10f, Color.green);
 
-        RaycastHit2D hit = Physics2D.Raycast(startPoint.position, startPoint.TransformDirection(dir), 20f, layerMask);
+        RaycastHit2D hit = Physics2D.Raycast(fan.transform.position, fan.transform.TransformDirection(Vector2.up), 20f, layerMask);
 
         if (hit)
         {
-            if (GetComponent<Rigidbody2D>() != null)
+            if (bubble.GetComponent<Rigidbody2D>() != null)
             {
-                GetComponent<Rigidbody2D>().velocity += (forceV * force);
+                bubble.GetComponent<Rigidbody2D>().velocity += (forceV * force);
                 Debug.Log(forceV * force);
 
             }
