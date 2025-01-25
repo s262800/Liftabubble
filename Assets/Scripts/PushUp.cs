@@ -46,10 +46,7 @@ public class PushUp : MonoBehaviour
     private float distanceX;
     private float distanceY;
 
-
-
-
-
+    private bool isBlowingOn = false;
 
     void Start()
     {
@@ -74,6 +71,7 @@ public class PushUp : MonoBehaviour
         if (Input.GetKeyUp(KeyCode.Space) || Input.GetKeyUp(KeyCode.Mouse0))
         {
             anim.SetBool("Fanning", false);
+            isBlowingOn = false;
         }
 
 
@@ -130,6 +128,11 @@ public class PushUp : MonoBehaviour
 
     }
 
+    public bool isBlowing()
+    {
+        return isBlowingOn;
+    }
+
     void CreateRay()
     {
 
@@ -139,12 +142,15 @@ public class PushUp : MonoBehaviour
 
         if (hit)
         {
+            isBlowingOn = true;
             if (bubble.GetComponent<Rigidbody2D>() != null)
             {
                 bubble.GetComponent<Rigidbody2D>().velocity += (forceV * force);
 
             }
         }
+        else
+            isBlowingOn = false;
 
     }
 }
