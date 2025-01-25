@@ -8,6 +8,9 @@ public class BubbleCollision : MonoBehaviour
     [SerializeField]
     private BubbleChangeSize bubbleChangeSize_cs;
 
+    [SerializeField]
+    private GameObject gameOverPopup;
+
 
     void Start()
     {
@@ -17,7 +20,49 @@ public class BubbleCollision : MonoBehaviour
 
     void Update()
     {
-        
+
+    }
+
+    void Dead(GameObject obj)
+    {
+        if (gameObject.GetComponent<SpriteRenderer>() != false) gameObject.GetComponent<SpriteRenderer>().enabled = false;
+
+        foreach (Transform child in gameObject.transform) child.gameObject.GetComponent<SpriteRenderer>().enabled = false;
+
+        if (gameObject.GetComponent<Rigidbody2D>())
+        {
+            gameObject.GetComponent<Rigidbody2D>().simulated = false;
+
+        }
+
+        if (obj.GetComponent<SpriteRenderer>())
+        {
+            obj.GetComponent<SpriteRenderer>().enabled = true;
+        }
+
+        gameOverPopup.SetActive(true);
+
+
+    }
+
+    void End(GameObject obj)
+    {
+        if (gameObject.GetComponent<SpriteRenderer>() != false) gameObject.GetComponent<SpriteRenderer>().enabled = false;
+
+        foreach (Transform child in gameObject.transform) child.gameObject.GetComponent<SpriteRenderer>().enabled = false;
+
+        if (gameObject.GetComponent<Rigidbody2D>())
+        {
+            gameObject.GetComponent<Rigidbody2D>().simulated = false;
+
+        }
+
+        if (obj.GetComponent<SpriteRenderer>())
+        {
+            obj.GetComponent<SpriteRenderer>().enabled = true;
+        }
+
+        gameOverPopup.SetActive(true);
     }
 
 
@@ -25,33 +70,12 @@ public class BubbleCollision : MonoBehaviour
     {
         if(collision.gameObject.CompareTag("Obstacle"))
         {
-            if (gameObject.GetComponent<SpriteRenderer>() != false) gameObject.GetComponent<SpriteRenderer>().enabled = false;
-
-            foreach (Transform child in gameObject.transform) child.gameObject.GetComponent<SpriteRenderer>().enabled = false;
-
-            if (gameObject.GetComponent<Rigidbody2D>())
-            {
-                gameObject.GetComponent<Rigidbody2D>().simulated = false;
-
-            }
+            Dead(collision.gameObject);
         }
 
         if (collision.gameObject.CompareTag("End"))
         {
-            if (gameObject.GetComponent<SpriteRenderer>() != false) gameObject.GetComponent<SpriteRenderer>().enabled = false;
-
-            foreach (Transform child in gameObject.transform) child.gameObject.GetComponent<SpriteRenderer>().enabled = false;
-
-            if (gameObject.GetComponent<Rigidbody2D>())
-            {
-                gameObject.GetComponent<Rigidbody2D>().simulated = false;
-
-            }
-
-            if(collision.gameObject.GetComponent<SpriteRenderer>())
-            {
-                collision.gameObject.GetComponent<SpriteRenderer>().enabled = true;
-            }
+            End(collision.gameObject);
         }
 
         if (collision.gameObject.CompareTag("Replenish"))
