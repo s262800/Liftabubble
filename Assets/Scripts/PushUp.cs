@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 
 
 
@@ -28,6 +29,12 @@ public class PushUp : MonoBehaviour
 
     [SerializeField]
     private Animator anim;
+
+    [SerializeField]
+    UnityEvent playSoundEvent;
+   
+    [SerializeField]
+    UnityEvent stopSoundEvent;
 
 
     private Vector2 upVector;
@@ -67,11 +74,17 @@ public class PushUp : MonoBehaviour
             CreateRay();
             anim.SetBool("Fanning", true);
         }
-       
+
+        if (Input.GetKeyDown(KeyCode.Space) || Input.GetKeyDown(KeyCode.Mouse0))
+        {
+            playSoundEvent.Invoke();
+        }
+
         if (Input.GetKeyUp(KeyCode.Space) || Input.GetKeyUp(KeyCode.Mouse0))
         {
             anim.SetBool("Fanning", false);
             isBlowingOn = false;
+            stopSoundEvent.Invoke();
         }
 
 
