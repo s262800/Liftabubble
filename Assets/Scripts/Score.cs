@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
+using UnityEngine.UI;
 
 
 public class Score : MonoBehaviour
@@ -14,6 +15,12 @@ public class Score : MonoBehaviour
 
     [SerializeField]
     private TMP_Text scoreText;
+
+    [SerializeField]
+    private float maxScore;
+
+    [SerializeField]
+    private Image[] starImages;
 
 
 
@@ -44,9 +51,35 @@ public class Score : MonoBehaviour
    public void SetScoreText()
     {
        float score = (bubbleSize * 10000) - timePassed;
-       score = Mathf.Clamp(score, 0, 99999999999);
+       score = Mathf.Clamp(score, 0, maxScore);
         score = Mathf.Round(score);
       scoreText.SetText("Your score was: " + score);
+        SetImages(score);
+    }
+
+    void SetImages(float score)
+    {
+        float s = (maxScore / score);
+
+
+        if (s > (100 / 3 * 2))
+        {
+            starImages[2].fillAmount = (s) / 1000f;
+            Debug.Log((s) / 1000f);
+        }
+
+        else if (s > (100 / 3))
+        {
+            starImages[1].fillAmount = (s) / 1000f;
+            Debug.Log((s) / 1000f);
+        }
+
+        else
+            starImages[0].fillAmount = (s) / 1000f;
+
+
+
+
     }
 
 
