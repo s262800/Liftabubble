@@ -5,17 +5,13 @@ using UnityEngine.SceneManagement;
 
 public class LoadScene : MonoBehaviour
 {
-    [SerializeField]
-    private string sceneName;
-
-
     void Start()
     {
         
     }
 
 
-    public void LoadLevel()
+    public void LoadLevel(string sceneName)
     {
         SceneManager.LoadScene(sceneName);
     }

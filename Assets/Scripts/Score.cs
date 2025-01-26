@@ -30,7 +30,7 @@ public class Score : MonoBehaviour
         isTimePassing = true;
 
         foreach(var image in starImages)
-            image.enabled = false;
+            image.fillAmount = 0f;
     }
 
  
@@ -55,7 +55,7 @@ public class Score : MonoBehaviour
    public void SetScoreText()
     {
         foreach (var image in starImages)
-            image.enabled = false;
+            image.fillAmount = 1f;
 
         float score = (bubbleSize * 10000) - timePassed;
        score = Mathf.Clamp(score, 0, maxScore);
