@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 
 
 
@@ -28,6 +29,12 @@ public class PushUp : MonoBehaviour
 
     [SerializeField]
     private Animator anim;
+
+    [SerializeField]
+    UnityEvent playSoundEvent;
+   
+    [SerializeField]
+    UnityEvent stopSoundEvent;
 
 
     private Vector2 upVector;
@@ -62,70 +69,95 @@ public class PushUp : MonoBehaviour
     void Update()
     {
 
-        if(Input.GetKey(KeyCode.Space) || Input.GetKey(KeyCode.Mouse0))
+        if (Input.GetKey(KeyCode.Space) || Input.GetKey(KeyCode.Mouse0))
         {
             CreateRay();
             anim.SetBool("Fanning", true);
         }
-       
+
+        if (Input.GetKeyDown(KeyCode.Space) || Input.GetKeyDown(KeyCode.Mouse0))
+        {
+            playSoundEvent.Invoke();
+        }
+
         if (Input.GetKeyUp(KeyCode.Space) || Input.GetKeyUp(KeyCode.Mouse0))
         {
             anim.SetBool("Fanning", false);
             isBlowingOn = false;
+            stopSoundEvent.Invoke();
         }
 
 
-        distanceX = Mathf.Abs(fan.transform.position.x - bubble.transform.position.x);
-         distanceY = Mathf.Abs(fan.transform.position.y - bubble.transform.position.y);
+
+
+       // fan.transform.LookAt(bubble.transform.position, Vector2.up);
+
+        Vector3 offset = bubble.transform.position - fan.transform.position;
+
+        fan.transform.rotation = Quaternion.LookRotation(
+                               Vector3.forward, // Keep z+ pointing straight into the screen.
+                               offset           // Point y+ toward the target.
+                             );
 
 
 
-        if ((fan.transform.position.y > bubble.transform.position.y) && (distanceY > 1f))
-        {
-            facing = Facing.ABOVE;
-        }
+        forceV = fan.transform.up;
 
-        if ((fan.transform.position.y < bubble.transform.position.y) && (distanceY > 1f))
-        {
 
-            facing = Facing.BELOW;
 
-        }
 
-        if ((fan.transform.position.x > bubble.transform.position.x) && (distanceX >= 3f))
-        {
-            facing = Facing.RIGHT;
-        }
+        /*        distanceX = Mathf.Abs(fan.transform.position.x - bubble.transform.position.x);
+                 distanceY = Mathf.Abs(fan.transform.position.y - bubble.transform.position.y);
 
-        if ((fan.transform.position.x < bubble.transform.position.x) && (distanceX >= 3f) )
-        {
-            facing = Facing.LEFT;
-        }
 
-        switch (facing)
-        {
-            case Facing.ABOVE:
-                direction = Vector2.down; 
-                forceV = downVector;
-                fan.transform.eulerAngles = new Vector3(0, 0, 180);
-                break;
-            case Facing.BELOW:
-                direction = Vector2.up;
-                forceV = upVector;
-                fan.transform.eulerAngles = new Vector3(0, 0, 0);
-                break;
-            case Facing.LEFT:
-                direction = Vector2.right;
-                forceV = rightVector;
-                fan.transform.eulerAngles = new Vector3(0, 0, 270);
-                break;
-            case Facing.RIGHT:
-                direction = Vector2.left;
-                forceV = leftVector;
-                fan.transform.eulerAngles = new Vector3(0, 0, 90);
-                break;
-        }
 
+                if ((fan.transform.position.y > bubble.transform.position.y) && (distanceY > 1f))
+                {
+                    facing = Facing.ABOVE;
+                }
+
+                if ((fan.transform.position.y < bubble.transform.position.y) && (distanceY > 1f))
+                {
+
+                    facing = Facing.BELOW;
+
+                }
+
+                if ((fan.transform.position.x > bubble.transform.position.x) && (distanceX >= 3f))
+                {
+                    facing = Facing.RIGHT;
+                }
+
+                if ((fan.transform.position.x < bubble.transform.position.x) && (distanceX >= 3f) )
+                {
+                    facing = Facing.LEFT;
+                }
+
+                switch (facing)
+                {
+                    case Facing.ABOVE:
+                        direction = Vector2.down; 
+                        forceV = downVector;
+                        fan.transform.eulerAngles = new Vector3(0, 0, 180);
+                        break;
+                    case Facing.BELOW:
+                        direction = Vector2.up;
+                        forceV = upVector;
+                        fan.transform.eulerAngles = new Vector3(0, 0, 0);
+                        break;
+                    case Facing.LEFT:
+                        direction = Vector2.right;
+                        forceV = rightVector;
+                        fan.transform.eulerAngles = new Vector3(0, 0, 270);
+                        break;
+                    case Facing.RIGHT:
+                        direction = Vector2.left;
+                        forceV = leftVector;
+                        fan.transform.eulerAngles = new Vector3(0, 0, 90);
+                        break;
+                }
+
+            }*/
     }
 
     public bool isBlowing()

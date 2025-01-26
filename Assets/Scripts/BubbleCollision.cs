@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEditor.Animations;
 using UnityEngine;
+using UnityEngine.Events;
 
 public class BubbleCollision : MonoBehaviour
 {
@@ -17,6 +18,13 @@ public class BubbleCollision : MonoBehaviour
     [SerializeField]
     private Score score_cs;
 
+    [SerializeField]
+    private AudioSwap audioSwap_cs;
+
+    [SerializeField]
+    private UnityEvent e;
+
+
 
     void Start()
     {
@@ -31,6 +39,9 @@ public class BubbleCollision : MonoBehaviour
 
     void Dead(GameObject obj)
     {
+        e.Invoke();
+
+
         if (gameObject.GetComponent<SpriteRenderer>() != false) gameObject.GetComponent<SpriteRenderer>().enabled = false;
 
         foreach (Transform child in gameObject.transform) child.gameObject.GetComponent<SpriteRenderer>().enabled = false;
@@ -49,19 +60,35 @@ public class BubbleCollision : MonoBehaviour
         gameOverPopupCG.alpha = 1.0f;
         gameOverPopupCG.interactable = true;
         gameOverPopupCG.blocksRaycasts = true;
-        
+
+        audioSwap_cs.FadeOut();
+
 
 
     }
 
     void End(GameObject obj)
     {
+        e.Invoke();
         score_cs.SetBubbleSize(bubbleChangeSize_cs.GetSize());
         score_cs.SetScoreText(); 
         gameOverPopupCG.alpha = 1.0f;
         gameOverPopupCG.interactable = true;
         gameOverPopupCG.blocksRaycasts = true;
-        gameObject.SetActive(false);
+        audioSwap_cs.FadeOut();
+
+       
+        if (gameObject.GetComponent<SpriteRenderer>() != false) gameObject.GetComponent<SpriteRenderer>().enabled = false;
+
+        foreach (Transform child in gameObject.transform) child.gameObject.GetComponent<SpriteRenderer>().enabled = false;
+
+        if (gameObject.GetComponent<Rigidbody2D>())
+        {
+            gameObject.GetComponent<Rigidbody2D>().simulated = false;
+
+        }
+
+
     }
 
 
