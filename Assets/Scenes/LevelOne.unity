@@ -133,7 +133,6 @@ GameObject:
   - component: {fileID: 111009156}
   - component: {fileID: 111009155}
   - component: {fileID: 111009154}
-  - component: {fileID: 111009153}
   m_Layer: 0
   m_Name: Open Sprite Shape (12)
   m_TagString: Obstacle
@@ -141,68 +140,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!68 &111009153
-EdgeCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 111009152}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_ForceSendLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ForceReceiveLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ContactCaptureLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_CallbackLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_EdgeRadius: 1.5
-  m_Points:
-  - {x: -5.71526, y: -0.7851576}
-  - {x: -5.1296577, y: -0.47899324}
-  - {x: -4.7488284, y: -0.39069486}
-  - {x: -4.3759403, y: -0.379936}
-  - {x: -4.0110526, y: -0.4284015}
-  - {x: -3.7529383, y: -0.4930435}
-  - {x: -3.4585655, y: -0.6222683}
-  - {x: -3.3400383, y: -0.6996253}
-  - {x: -2.847582, y: -0.9009833}
-  - {x: -1.9683366, y: -1.2285258}
-  - {x: -1.6206939, y: -1.4092333}
-  - {x: -0.6892986, y: -1.9833407}
-  - {x: 0.12569222, y: -2.4580395}
-  - {x: 0.80097115, y: -2.7997904}
-  - {x: 1.521085, y: -3.1160736}
-  - {x: 2.1928651, y: -3.390426}
-  - {x: 2.6915157, y: -3.6275873}
-  - {x: 3.0940702, y: -3.7710185}
-  - {x: 3.519685, y: -3.889417}
-  - {x: 3.956725, y: -3.9886112}
-  - {x: 5.2199945, y: -4.2292075}
-  - {x: 6.4524384, y: -4.5090437}
-  - {x: 7.2077336, y: -4.626951}
-  m_AdjacentStartPoint: {x: 0, y: 0}
-  m_AdjacentEndPoint: {x: 0, y: 0}
-  m_UseAdjacentStartPoint: 0
-  m_UseAdjacentEndPoint: 0
 --- !u!114 &111009154
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -507,7 +444,6 @@ GameObject:
   - component: {fileID: 138600469}
   - component: {fileID: 138600468}
   - component: {fileID: 138600467}
-  - component: {fileID: 138600466}
   m_Layer: 0
   m_Name: Open Sprite Shape (17)
   m_TagString: Obstacle
@@ -515,68 +451,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!68 &138600466
-EdgeCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 138600465}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_ForceSendLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ForceReceiveLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ContactCaptureLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_CallbackLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_EdgeRadius: 1.5
-  m_Points:
-  - {x: -5.71526, y: -0.7851576}
-  - {x: -5.1296577, y: -0.47899324}
-  - {x: -4.7488284, y: -0.39069486}
-  - {x: -4.3759403, y: -0.379936}
-  - {x: -4.0110526, y: -0.4284015}
-  - {x: -3.7529383, y: -0.4930435}
-  - {x: -3.4585655, y: -0.6222683}
-  - {x: -3.3400383, y: -0.6996253}
-  - {x: -2.847582, y: -0.9009833}
-  - {x: -1.9683366, y: -1.2285258}
-  - {x: -1.6206939, y: -1.4092333}
-  - {x: -0.6892986, y: -1.9833407}
-  - {x: 0.12569222, y: -2.4580395}
-  - {x: 0.80097115, y: -2.7997904}
-  - {x: 1.521085, y: -3.1160736}
-  - {x: 2.1928651, y: -3.390426}
-  - {x: 2.6915157, y: -3.6275873}
-  - {x: 3.0940702, y: -3.7710185}
-  - {x: 3.519685, y: -3.889417}
-  - {x: 3.956725, y: -3.9886112}
-  - {x: 5.2199945, y: -4.2292075}
-  - {x: 6.4524384, y: -4.5090437}
-  - {x: 7.2077336, y: -4.626951}
-  m_AdjacentStartPoint: {x: 0, y: 0}
-  m_AdjacentEndPoint: {x: 0, y: 0}
-  m_UseAdjacentStartPoint: 0
-  m_UseAdjacentEndPoint: 0
 --- !u!114 &138600467
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -773,7 +647,6 @@ GameObject:
   - component: {fileID: 155066154}
   - component: {fileID: 155066153}
   - component: {fileID: 155066152}
-  - component: {fileID: 155066151}
   m_Layer: 0
   m_Name: Open Sprite Shape (9)
   m_TagString: Obstacle
@@ -781,68 +654,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!68 &155066151
-EdgeCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 155066150}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_ForceSendLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ForceReceiveLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ContactCaptureLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_CallbackLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_EdgeRadius: 1.5
-  m_Points:
-  - {x: -5.71526, y: -0.7851576}
-  - {x: -5.1296577, y: -0.47899324}
-  - {x: -4.7488284, y: -0.39069486}
-  - {x: -4.3759403, y: -0.379936}
-  - {x: -4.0110526, y: -0.4284015}
-  - {x: -3.7529383, y: -0.4930435}
-  - {x: -3.4585655, y: -0.6222683}
-  - {x: -3.3400383, y: -0.6996253}
-  - {x: -2.847582, y: -0.9009833}
-  - {x: -1.9683366, y: -1.2285258}
-  - {x: -1.6206939, y: -1.4092333}
-  - {x: -0.6892986, y: -1.9833407}
-  - {x: 0.12569222, y: -2.4580395}
-  - {x: 0.80097115, y: -2.7997904}
-  - {x: 1.521085, y: -3.1160736}
-  - {x: 2.1928651, y: -3.390426}
-  - {x: 2.6915157, y: -3.6275873}
-  - {x: 3.0940702, y: -3.7710185}
-  - {x: 3.519685, y: -3.889417}
-  - {x: 3.956725, y: -3.9886112}
-  - {x: 5.2199945, y: -4.2292075}
-  - {x: 6.4524384, y: -4.5090437}
-  - {x: 7.2077336, y: -4.626951}
-  m_AdjacentStartPoint: {x: 0, y: 0}
-  m_AdjacentEndPoint: {x: 0, y: 0}
-  m_UseAdjacentStartPoint: 0
-  m_UseAdjacentEndPoint: 0
 --- !u!114 &155066152
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1039,7 +850,6 @@ GameObject:
   - component: {fileID: 225195165}
   - component: {fileID: 225195164}
   - component: {fileID: 225195163}
-  - component: {fileID: 225195162}
   m_Layer: 0
   m_Name: Open Sprite Shape (13)
   m_TagString: Obstacle
@@ -1047,68 +857,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!68 &225195162
-EdgeCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 225195161}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_ForceSendLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ForceReceiveLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ContactCaptureLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_CallbackLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_EdgeRadius: 1.5
-  m_Points:
-  - {x: -5.71526, y: -0.7851576}
-  - {x: -5.1296577, y: -0.47899324}
-  - {x: -4.7488284, y: -0.39069486}
-  - {x: -4.3759403, y: -0.379936}
-  - {x: -4.0110526, y: -0.4284015}
-  - {x: -3.7529383, y: -0.4930435}
-  - {x: -3.4585655, y: -0.6222683}
-  - {x: -3.3400383, y: -0.6996253}
-  - {x: -2.847582, y: -0.9009833}
-  - {x: -1.9683366, y: -1.2285258}
-  - {x: -1.6206939, y: -1.4092333}
-  - {x: -0.6892986, y: -1.9833407}
-  - {x: 0.12569222, y: -2.4580395}
-  - {x: 0.80097115, y: -2.7997904}
-  - {x: 1.521085, y: -3.1160736}
-  - {x: 2.1928651, y: -3.390426}
-  - {x: 2.6915157, y: -3.6275873}
-  - {x: 3.0940702, y: -3.7710185}
-  - {x: 3.519685, y: -3.889417}
-  - {x: 3.956725, y: -3.9886112}
-  - {x: 5.2199945, y: -4.2292075}
-  - {x: 6.4524384, y: -4.5090437}
-  - {x: 7.2077336, y: -4.626951}
-  m_AdjacentStartPoint: {x: 0, y: 0}
-  m_AdjacentEndPoint: {x: 0, y: 0}
-  m_UseAdjacentStartPoint: 0
-  m_UseAdjacentEndPoint: 0
 --- !u!114 &225195163
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1676,6 +1424,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   scoreText: {fileID: 718859313}
+  maxScore: 0
+  starImages: []
 --- !u!1 &262396998
 GameObject:
   m_ObjectHideFlags: 0
@@ -1687,7 +1437,6 @@ GameObject:
   - component: {fileID: 262397002}
   - component: {fileID: 262397001}
   - component: {fileID: 262397000}
-  - component: {fileID: 262396999}
   m_Layer: 0
   m_Name: Open Sprite Shape (15)
   m_TagString: Obstacle
@@ -1695,68 +1444,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!68 &262396999
-EdgeCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 262396998}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_ForceSendLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ForceReceiveLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ContactCaptureLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_CallbackLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_EdgeRadius: 1.5
-  m_Points:
-  - {x: -5.71526, y: -0.7851576}
-  - {x: -5.1296577, y: -0.47899324}
-  - {x: -4.7488284, y: -0.39069486}
-  - {x: -4.3759403, y: -0.379936}
-  - {x: -4.0110526, y: -0.4284015}
-  - {x: -3.7529383, y: -0.4930435}
-  - {x: -3.4585655, y: -0.6222683}
-  - {x: -3.3400383, y: -0.6996253}
-  - {x: -2.847582, y: -0.9009833}
-  - {x: -1.9683366, y: -1.2285258}
-  - {x: -1.6206939, y: -1.4092333}
-  - {x: -0.6892986, y: -1.9833407}
-  - {x: 0.12569222, y: -2.4580395}
-  - {x: 0.80097115, y: -2.7997904}
-  - {x: 1.521085, y: -3.1160736}
-  - {x: 2.1928651, y: -3.390426}
-  - {x: 2.6915157, y: -3.6275873}
-  - {x: 3.0940702, y: -3.7710185}
-  - {x: 3.519685, y: -3.889417}
-  - {x: 3.956725, y: -3.9886112}
-  - {x: 5.2199945, y: -4.2292075}
-  - {x: 6.4524384, y: -4.5090437}
-  - {x: 7.2077336, y: -4.626951}
-  m_AdjacentStartPoint: {x: 0, y: 0}
-  m_AdjacentEndPoint: {x: 0, y: 0}
-  m_UseAdjacentStartPoint: 0
-  m_UseAdjacentEndPoint: 0
 --- !u!114 &262397000
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1953,7 +1640,6 @@ GameObject:
   - component: {fileID: 305208490}
   - component: {fileID: 305208489}
   - component: {fileID: 305208488}
-  - component: {fileID: 305208487}
   m_Layer: 0
   m_Name: Open Sprite Shape (14)
   m_TagString: Obstacle
@@ -1961,68 +1647,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!68 &305208487
-EdgeCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 305208486}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_ForceSendLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ForceReceiveLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ContactCaptureLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_CallbackLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_EdgeRadius: 1.5
-  m_Points:
-  - {x: -5.71526, y: -0.7851576}
-  - {x: -5.1296577, y: -0.47899324}
-  - {x: -4.7488284, y: -0.39069486}
-  - {x: -4.3759403, y: -0.379936}
-  - {x: -4.0110526, y: -0.4284015}
-  - {x: -3.7529383, y: -0.4930435}
-  - {x: -3.4585655, y: -0.6222683}
-  - {x: -3.3400383, y: -0.6996253}
-  - {x: -2.847582, y: -0.9009833}
-  - {x: -1.9683366, y: -1.2285258}
-  - {x: -1.6206939, y: -1.4092333}
-  - {x: -0.6892986, y: -1.9833407}
-  - {x: 0.12569222, y: -2.4580395}
-  - {x: 0.80097115, y: -2.7997904}
-  - {x: 1.521085, y: -3.1160736}
-  - {x: 2.1928651, y: -3.390426}
-  - {x: 2.6915157, y: -3.6275873}
-  - {x: 3.0940702, y: -3.7710185}
-  - {x: 3.519685, y: -3.889417}
-  - {x: 3.956725, y: -3.9886112}
-  - {x: 5.2199945, y: -4.2292075}
-  - {x: 6.4524384, y: -4.5090437}
-  - {x: 7.2077336, y: -4.626951}
-  m_AdjacentStartPoint: {x: 0, y: 0}
-  m_AdjacentEndPoint: {x: 0, y: 0}
-  m_UseAdjacentStartPoint: 0
-  m_UseAdjacentEndPoint: 0
 --- !u!114 &305208488
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2386,7 +2010,6 @@ GameObject:
   - component: {fileID: 399335677}
   - component: {fileID: 399335676}
   - component: {fileID: 399335675}
-  - component: {fileID: 399335674}
   m_Layer: 0
   m_Name: Open Sprite Shape (11)
   m_TagString: Obstacle
@@ -2394,68 +2017,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!68 &399335674
-EdgeCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 399335673}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_ForceSendLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ForceReceiveLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ContactCaptureLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_CallbackLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_EdgeRadius: 1.5
-  m_Points:
-  - {x: -5.71526, y: -0.7851576}
-  - {x: -5.1296577, y: -0.47899324}
-  - {x: -4.7488284, y: -0.39069486}
-  - {x: -4.3759403, y: -0.379936}
-  - {x: -4.0110526, y: -0.4284015}
-  - {x: -3.7529383, y: -0.4930435}
-  - {x: -3.4585655, y: -0.6222683}
-  - {x: -3.3400383, y: -0.6996253}
-  - {x: -2.847582, y: -0.9009833}
-  - {x: -1.9683366, y: -1.2285258}
-  - {x: -1.6206939, y: -1.4092333}
-  - {x: -0.6892986, y: -1.9833407}
-  - {x: 0.12569222, y: -2.4580395}
-  - {x: 0.80097115, y: -2.7997904}
-  - {x: 1.521085, y: -3.1160736}
-  - {x: 2.1928651, y: -3.390426}
-  - {x: 2.6915157, y: -3.6275873}
-  - {x: 3.0940702, y: -3.7710185}
-  - {x: 3.519685, y: -3.889417}
-  - {x: 3.956725, y: -3.9886112}
-  - {x: 5.2199945, y: -4.2292075}
-  - {x: 6.4524384, y: -4.5090437}
-  - {x: 7.2077336, y: -4.626951}
-  m_AdjacentStartPoint: {x: 0, y: 0}
-  m_AdjacentEndPoint: {x: 0, y: 0}
-  m_UseAdjacentStartPoint: 0
-  m_UseAdjacentEndPoint: 0
 --- !u!114 &399335675
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3030,7 +2591,6 @@ GameObject:
   - component: {fileID: 944761124}
   - component: {fileID: 944761123}
   - component: {fileID: 944761122}
-  - component: {fileID: 944761121}
   m_Layer: 0
   m_Name: Open Sprite Shape (6)
   m_TagString: Obstacle
@@ -3038,68 +2598,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!68 &944761121
-EdgeCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 944761120}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_ForceSendLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ForceReceiveLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ContactCaptureLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_CallbackLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_EdgeRadius: 1.5
-  m_Points:
-  - {x: -5.71526, y: -0.7851576}
-  - {x: -5.1296577, y: -0.47899324}
-  - {x: -4.7488284, y: -0.39069486}
-  - {x: -4.3759403, y: -0.379936}
-  - {x: -4.0110526, y: -0.4284015}
-  - {x: -3.7529383, y: -0.4930435}
-  - {x: -3.4585655, y: -0.6222683}
-  - {x: -3.3400383, y: -0.6996253}
-  - {x: -2.847582, y: -0.9009833}
-  - {x: -1.9683366, y: -1.2285258}
-  - {x: -1.6206939, y: -1.4092333}
-  - {x: -0.6892986, y: -1.9833407}
-  - {x: 0.12569222, y: -2.4580395}
-  - {x: 0.80097115, y: -2.7997904}
-  - {x: 1.521085, y: -3.1160736}
-  - {x: 2.1928651, y: -3.390426}
-  - {x: 2.6915157, y: -3.6275873}
-  - {x: 3.0940702, y: -3.7710185}
-  - {x: 3.519685, y: -3.889417}
-  - {x: 3.956725, y: -3.9886112}
-  - {x: 5.2199945, y: -4.2292075}
-  - {x: 6.4524384, y: -4.5090437}
-  - {x: 7.2077336, y: -4.626951}
-  m_AdjacentStartPoint: {x: 0, y: 0}
-  m_AdjacentEndPoint: {x: 0, y: 0}
-  m_UseAdjacentStartPoint: 0
-  m_UseAdjacentEndPoint: 0
 --- !u!114 &944761122
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3660,7 +3158,6 @@ GameObject:
   - component: {fileID: 1097930276}
   - component: {fileID: 1097930275}
   - component: {fileID: 1097930274}
-  - component: {fileID: 1097930273}
   m_Layer: 0
   m_Name: Open Sprite Shape (5)
   m_TagString: Obstacle
@@ -3668,68 +3165,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!68 &1097930273
-EdgeCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1097930272}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_ForceSendLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ForceReceiveLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ContactCaptureLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_CallbackLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_EdgeRadius: 1.5
-  m_Points:
-  - {x: -5.71526, y: -0.7851576}
-  - {x: -5.1296577, y: -0.47899324}
-  - {x: -4.7488284, y: -0.39069486}
-  - {x: -4.3759403, y: -0.379936}
-  - {x: -4.0110526, y: -0.4284015}
-  - {x: -3.7529383, y: -0.4930435}
-  - {x: -3.4585655, y: -0.6222683}
-  - {x: -3.3400383, y: -0.6996253}
-  - {x: -2.847582, y: -0.9009833}
-  - {x: -1.9683366, y: -1.2285258}
-  - {x: -1.6206939, y: -1.4092333}
-  - {x: -0.6892986, y: -1.9833407}
-  - {x: 0.12569222, y: -2.4580395}
-  - {x: 0.80097115, y: -2.7997904}
-  - {x: 1.521085, y: -3.1160736}
-  - {x: 2.1928651, y: -3.390426}
-  - {x: 2.6915157, y: -3.6275873}
-  - {x: 3.0940702, y: -3.7710185}
-  - {x: 3.519685, y: -3.889417}
-  - {x: 3.956725, y: -3.9886112}
-  - {x: 5.2199945, y: -4.2292075}
-  - {x: 6.4524384, y: -4.5090437}
-  - {x: 7.2077336, y: -4.626951}
-  m_AdjacentStartPoint: {x: 0, y: 0}
-  m_AdjacentEndPoint: {x: 0, y: 0}
-  m_UseAdjacentStartPoint: 0
-  m_UseAdjacentEndPoint: 0
 --- !u!114 &1097930274
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4014,7 +3449,6 @@ GameObject:
   - component: {fileID: 1449894442}
   - component: {fileID: 1449894441}
   - component: {fileID: 1449894440}
-  - component: {fileID: 1449894439}
   m_Layer: 0
   m_Name: Open Sprite Shape (16)
   m_TagString: Obstacle
@@ -4022,68 +3456,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!68 &1449894439
-EdgeCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1449894438}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_ForceSendLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ForceReceiveLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ContactCaptureLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_CallbackLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_EdgeRadius: 1.5
-  m_Points:
-  - {x: -5.71526, y: -0.7851576}
-  - {x: -5.1296577, y: -0.47899324}
-  - {x: -4.7488284, y: -0.39069486}
-  - {x: -4.3759403, y: -0.379936}
-  - {x: -4.0110526, y: -0.4284015}
-  - {x: -3.7529383, y: -0.4930435}
-  - {x: -3.4585655, y: -0.6222683}
-  - {x: -3.3400383, y: -0.6996253}
-  - {x: -2.847582, y: -0.9009833}
-  - {x: -1.9683366, y: -1.2285258}
-  - {x: -1.6206939, y: -1.4092333}
-  - {x: -0.6892986, y: -1.9833407}
-  - {x: 0.12569222, y: -2.4580395}
-  - {x: 0.80097115, y: -2.7997904}
-  - {x: 1.521085, y: -3.1160736}
-  - {x: 2.1928651, y: -3.390426}
-  - {x: 2.6915157, y: -3.6275873}
-  - {x: 3.0940702, y: -3.7710185}
-  - {x: 3.519685, y: -3.889417}
-  - {x: 3.956725, y: -3.9886112}
-  - {x: 5.2199945, y: -4.2292075}
-  - {x: 6.4524384, y: -4.5090437}
-  - {x: 7.2077336, y: -4.626951}
-  m_AdjacentStartPoint: {x: 0, y: 0}
-  m_AdjacentEndPoint: {x: 0, y: 0}
-  m_UseAdjacentStartPoint: 0
-  m_UseAdjacentEndPoint: 0
 --- !u!114 &1449894440
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4370,7 +3742,6 @@ GameObject:
   - component: {fileID: 1611252357}
   - component: {fileID: 1611252356}
   - component: {fileID: 1611252355}
-  - component: {fileID: 1611252354}
   m_Layer: 0
   m_Name: Open Sprite Shape (3)
   m_TagString: Obstacle
@@ -4378,68 +3749,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!68 &1611252354
-EdgeCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1611252353}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_ForceSendLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ForceReceiveLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ContactCaptureLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_CallbackLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_EdgeRadius: 1.5
-  m_Points:
-  - {x: -5.71526, y: -0.7851576}
-  - {x: -5.1296577, y: -0.47899324}
-  - {x: -4.7488284, y: -0.39069486}
-  - {x: -4.3759403, y: -0.379936}
-  - {x: -4.0110526, y: -0.4284015}
-  - {x: -3.7529383, y: -0.4930435}
-  - {x: -3.4585655, y: -0.6222683}
-  - {x: -3.3400383, y: -0.6996253}
-  - {x: -2.847582, y: -0.9009833}
-  - {x: -1.9683366, y: -1.2285258}
-  - {x: -1.6206939, y: -1.4092333}
-  - {x: -0.6892986, y: -1.9833407}
-  - {x: 0.12569222, y: -2.4580395}
-  - {x: 0.80097115, y: -2.7997904}
-  - {x: 1.521085, y: -3.1160736}
-  - {x: 2.1928651, y: -3.390426}
-  - {x: 2.6915157, y: -3.6275873}
-  - {x: 3.0940702, y: -3.7710185}
-  - {x: 3.519685, y: -3.889417}
-  - {x: 3.956725, y: -3.9886112}
-  - {x: 5.2199945, y: -4.2292075}
-  - {x: 6.4524384, y: -4.5090437}
-  - {x: 7.2077336, y: -4.626951}
-  m_AdjacentStartPoint: {x: 0, y: 0}
-  m_AdjacentEndPoint: {x: 0, y: 0}
-  m_UseAdjacentStartPoint: 0
-  m_UseAdjacentEndPoint: 0
 --- !u!114 &1611252355
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4636,7 +3945,6 @@ GameObject:
   - component: {fileID: 1629994851}
   - component: {fileID: 1629994850}
   - component: {fileID: 1629994849}
-  - component: {fileID: 1629994848}
   m_Layer: 0
   m_Name: Open Sprite Shape (10)
   m_TagString: Obstacle
@@ -4644,68 +3952,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!68 &1629994848
-EdgeCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1629994847}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_ForceSendLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ForceReceiveLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ContactCaptureLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_CallbackLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_EdgeRadius: 1.5
-  m_Points:
-  - {x: -5.71526, y: -0.7851576}
-  - {x: -5.1296577, y: -0.47899324}
-  - {x: -4.7488284, y: -0.39069486}
-  - {x: -4.3759403, y: -0.379936}
-  - {x: -4.0110526, y: -0.4284015}
-  - {x: -3.7529383, y: -0.4930435}
-  - {x: -3.4585655, y: -0.6222683}
-  - {x: -3.3400383, y: -0.6996253}
-  - {x: -2.847582, y: -0.9009833}
-  - {x: -1.9683366, y: -1.2285258}
-  - {x: -1.6206939, y: -1.4092333}
-  - {x: -0.6892986, y: -1.9833407}
-  - {x: 0.12569222, y: -2.4580395}
-  - {x: 0.80097115, y: -2.7997904}
-  - {x: 1.521085, y: -3.1160736}
-  - {x: 2.1928651, y: -3.390426}
-  - {x: 2.6915157, y: -3.6275873}
-  - {x: 3.0940702, y: -3.7710185}
-  - {x: 3.519685, y: -3.889417}
-  - {x: 3.956725, y: -3.9886112}
-  - {x: 5.2199945, y: -4.2292075}
-  - {x: 6.4524384, y: -4.5090437}
-  - {x: 7.2077336, y: -4.626951}
-  m_AdjacentStartPoint: {x: 0, y: 0}
-  m_AdjacentEndPoint: {x: 0, y: 0}
-  m_UseAdjacentStartPoint: 0
-  m_UseAdjacentEndPoint: 0
 --- !u!114 &1629994849
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4902,7 +4148,6 @@ GameObject:
   - component: {fileID: 1691250597}
   - component: {fileID: 1691250596}
   - component: {fileID: 1691250595}
-  - component: {fileID: 1691250594}
   m_Layer: 0
   m_Name: Open Sprite Shape (7)
   m_TagString: Obstacle
@@ -4910,68 +4155,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!68 &1691250594
-EdgeCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1691250593}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_ForceSendLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ForceReceiveLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ContactCaptureLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_CallbackLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_EdgeRadius: 1.5
-  m_Points:
-  - {x: -5.71526, y: -0.7851576}
-  - {x: -5.1296577, y: -0.47899324}
-  - {x: -4.7488284, y: -0.39069486}
-  - {x: -4.3759403, y: -0.379936}
-  - {x: -4.0110526, y: -0.4284015}
-  - {x: -3.7529383, y: -0.4930435}
-  - {x: -3.4585655, y: -0.6222683}
-  - {x: -3.3400383, y: -0.6996253}
-  - {x: -2.847582, y: -0.9009833}
-  - {x: -1.9683366, y: -1.2285258}
-  - {x: -1.6206939, y: -1.4092333}
-  - {x: -0.6892986, y: -1.9833407}
-  - {x: 0.12569222, y: -2.4580395}
-  - {x: 0.80097115, y: -2.7997904}
-  - {x: 1.521085, y: -3.1160736}
-  - {x: 2.1928651, y: -3.390426}
-  - {x: 2.6915157, y: -3.6275873}
-  - {x: 3.0940702, y: -3.7710185}
-  - {x: 3.519685, y: -3.889417}
-  - {x: 3.956725, y: -3.9886112}
-  - {x: 5.2199945, y: -4.2292075}
-  - {x: 6.4524384, y: -4.5090437}
-  - {x: 7.2077336, y: -4.626951}
-  m_AdjacentStartPoint: {x: 0, y: 0}
-  m_AdjacentEndPoint: {x: 0, y: 0}
-  m_UseAdjacentStartPoint: 0
-  m_UseAdjacentEndPoint: 0
 --- !u!114 &1691250595
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5168,7 +4351,6 @@ GameObject:
   - component: {fileID: 1904057950}
   - component: {fileID: 1904057949}
   - component: {fileID: 1904057948}
-  - component: {fileID: 1904057947}
   m_Layer: 0
   m_Name: Open Sprite Shape (18)
   m_TagString: Obstacle
@@ -5176,68 +4358,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!68 &1904057947
-EdgeCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1904057946}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_ForceSendLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ForceReceiveLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ContactCaptureLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_CallbackLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_EdgeRadius: 1.5
-  m_Points:
-  - {x: -5.71526, y: -0.7851576}
-  - {x: -5.1296577, y: -0.47899324}
-  - {x: -4.7488284, y: -0.39069486}
-  - {x: -4.3759403, y: -0.379936}
-  - {x: -4.0110526, y: -0.4284015}
-  - {x: -3.7529383, y: -0.4930435}
-  - {x: -3.4585655, y: -0.6222683}
-  - {x: -3.3400383, y: -0.6996253}
-  - {x: -2.847582, y: -0.9009833}
-  - {x: -1.9683366, y: -1.2285258}
-  - {x: -1.6206939, y: -1.4092333}
-  - {x: -0.6892986, y: -1.9833407}
-  - {x: 0.12569222, y: -2.4580395}
-  - {x: 0.80097115, y: -2.7997904}
-  - {x: 1.521085, y: -3.1160736}
-  - {x: 2.1928651, y: -3.390426}
-  - {x: 2.6915157, y: -3.6275873}
-  - {x: 3.0940702, y: -3.7710185}
-  - {x: 3.519685, y: -3.889417}
-  - {x: 3.956725, y: -3.9886112}
-  - {x: 5.2199945, y: -4.2292075}
-  - {x: 6.4524384, y: -4.5090437}
-  - {x: 7.2077336, y: -4.626951}
-  m_AdjacentStartPoint: {x: 0, y: 0}
-  m_AdjacentEndPoint: {x: 0, y: 0}
-  m_UseAdjacentStartPoint: 0
-  m_UseAdjacentEndPoint: 0
 --- !u!114 &1904057948
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5676,7 +4796,6 @@ GameObject:
   - component: {fileID: 1963490388}
   - component: {fileID: 1963490387}
   - component: {fileID: 1963490386}
-  - component: {fileID: 1963490385}
   m_Layer: 0
   m_Name: Open Sprite Shape (8)
   m_TagString: Obstacle
@@ -5684,68 +4803,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!68 &1963490385
-EdgeCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1963490384}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_ForceSendLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ForceReceiveLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ContactCaptureLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_CallbackLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_EdgeRadius: 1.5
-  m_Points:
-  - {x: -5.71526, y: -0.7851576}
-  - {x: -5.1296577, y: -0.47899324}
-  - {x: -4.7488284, y: -0.39069486}
-  - {x: -4.3759403, y: -0.379936}
-  - {x: -4.0110526, y: -0.4284015}
-  - {x: -3.7529383, y: -0.4930435}
-  - {x: -3.4585655, y: -0.6222683}
-  - {x: -3.3400383, y: -0.6996253}
-  - {x: -2.847582, y: -0.9009833}
-  - {x: -1.9683366, y: -1.2285258}
-  - {x: -1.6206939, y: -1.4092333}
-  - {x: -0.6892986, y: -1.9833407}
-  - {x: 0.12569222, y: -2.4580395}
-  - {x: 0.80097115, y: -2.7997904}
-  - {x: 1.521085, y: -3.1160736}
-  - {x: 2.1928651, y: -3.390426}
-  - {x: 2.6915157, y: -3.6275873}
-  - {x: 3.0940702, y: -3.7710185}
-  - {x: 3.519685, y: -3.889417}
-  - {x: 3.956725, y: -3.9886112}
-  - {x: 5.2199945, y: -4.2292075}
-  - {x: 6.4524384, y: -4.5090437}
-  - {x: 7.2077336, y: -4.626951}
-  m_AdjacentStartPoint: {x: 0, y: 0}
-  m_AdjacentEndPoint: {x: 0, y: 0}
-  m_UseAdjacentStartPoint: 0
-  m_UseAdjacentEndPoint: 0
 --- !u!114 &1963490386
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6026,7 +5083,6 @@ GameObject:
   - component: {fileID: 1999440038}
   - component: {fileID: 1999440037}
   - component: {fileID: 1999440036}
-  - component: {fileID: 1999440035}
   m_Layer: 0
   m_Name: Open Sprite Shape (4)
   m_TagString: Obstacle
@@ -6034,68 +5090,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!68 &1999440035
-EdgeCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1999440034}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_ForceSendLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ForceReceiveLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ContactCaptureLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_CallbackLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_EdgeRadius: 1.5
-  m_Points:
-  - {x: -5.71526, y: -0.7851576}
-  - {x: -5.1296577, y: -0.47899324}
-  - {x: -4.7488284, y: -0.39069486}
-  - {x: -4.3759403, y: -0.379936}
-  - {x: -4.0110526, y: -0.4284015}
-  - {x: -3.7529383, y: -0.4930435}
-  - {x: -3.4585655, y: -0.6222683}
-  - {x: -3.3400383, y: -0.6996253}
-  - {x: -2.847582, y: -0.9009833}
-  - {x: -1.9683366, y: -1.2285258}
-  - {x: -1.6206939, y: -1.4092333}
-  - {x: -0.6892986, y: -1.9833407}
-  - {x: 0.12569222, y: -2.4580395}
-  - {x: 0.80097115, y: -2.7997904}
-  - {x: 1.521085, y: -3.1160736}
-  - {x: 2.1928651, y: -3.390426}
-  - {x: 2.6915157, y: -3.6275873}
-  - {x: 3.0940702, y: -3.7710185}
-  - {x: 3.519685, y: -3.889417}
-  - {x: 3.956725, y: -3.9886112}
-  - {x: 5.2199945, y: -4.2292075}
-  - {x: 6.4524384, y: -4.5090437}
-  - {x: 7.2077336, y: -4.626951}
-  m_AdjacentStartPoint: {x: 0, y: 0}
-  m_AdjacentEndPoint: {x: 0, y: 0}
-  m_UseAdjacentStartPoint: 0
-  m_UseAdjacentEndPoint: 0
 --- !u!114 &1999440036
 MonoBehaviour:
   m_ObjectHideFlags: 0
