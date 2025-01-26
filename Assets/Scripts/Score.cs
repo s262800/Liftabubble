@@ -44,7 +44,6 @@ public class Score : MonoBehaviour
    public void SetScoreText()
     {
        float score = (bubbleSize * 10000) - timePassed;
-        Debug.Log(bubbleSize);
        score = Mathf.Clamp(score, 0, 99999999999);
         score = Mathf.Round(score);
       scoreText.SetText("Your score was: " + score);
