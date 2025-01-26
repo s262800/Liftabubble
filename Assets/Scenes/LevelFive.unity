@@ -481,7 +481,7 @@ EdgeCollider2D:
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
-  m_EdgeRadius: 1.5
+  m_EdgeRadius: 1.3
   m_Points:
   - {x: -5.962642, y: 3.6701238}
   - {x: -4.7122273, y: 3.7515695}
@@ -1600,6 +1600,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   scoreText: {fileID: 718859313}
+  maxScore: 0
+  starImages: []
 --- !u!1 &336376385
 GameObject:
   m_ObjectHideFlags: 0
@@ -3962,6 +3964,10 @@ MonoBehaviour:
   gameOverPopup: {fileID: 785726417}
   gameOverPopupCG: {fileID: 785726419}
   score_cs: {fileID: 254590161}
+  audioSwap_cs: {fileID: 0}
+  e:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!114 &1068315292
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4059,6 +4065,12 @@ MonoBehaviour:
     m_Bits: 64
   force: 0.035
   anim: {fileID: 2018611433}
+  playSoundEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  stopSoundEvent:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!212 &1068315296
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -7585,7 +7597,7 @@ EdgeCollider2D:
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
-  m_EdgeRadius: 1.5
+  m_EdgeRadius: 1.3
   m_Points:
   - {x: -5.9627833, y: 3.672354}
   - {x: -4.9505606, y: 3.7316873}
