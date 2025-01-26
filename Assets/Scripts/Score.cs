@@ -24,9 +24,13 @@ public class Score : MonoBehaviour
 
 
 
+
     void Start()
     {
         isTimePassing = true;
+
+        foreach(var image in starImages)
+            image.enabled = false;
     }
 
  
@@ -50,10 +54,13 @@ public class Score : MonoBehaviour
 
    public void SetScoreText()
     {
-       float score = (bubbleSize * 10000) - timePassed;
+        foreach (var image in starImages)
+            image.enabled = false;
+
+        float score = (bubbleSize * 10000) - timePassed;
        score = Mathf.Clamp(score, 0, maxScore);
         score = Mathf.Round(score);
-      scoreText.SetText("Your score was: " + score);
+     // scoreText.SetText("Your score was: " + score);
         SetImages(score);
     }
 
